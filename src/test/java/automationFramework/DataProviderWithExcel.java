@@ -11,14 +11,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class DataProviderTest {
+import com.frameworks.dataDrivenFrmwrk2018.Constant;
+
+import utility.ExcelUtils;
+
+public class DataProviderWithExcel {
 	
 	private static WebDriver driver = null;
 	
 	@DataProvider(name="Authentication")
 	public static Object[][] credentials() {
-		Object[][] obj = new Object[][] {{"test1","password1"},{"test2","password2"}};
-		System.out.println(obj);
+		Object[][] obj = ExcelUtils.getTableArray(Constant.Path_TestData + Constant.File_TestData, "Sheet1");
 		return obj;
 	}
 

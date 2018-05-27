@@ -2,60 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11597" started-at="2018-05-27T17:51:57Z" finished-at="2018-05-27T17:52:08Z">
+  <suite name="Default suite" duration-ms="160051" started-at="2018-05-27T18:22:24Z" finished-at="2018-05-27T18:25:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11597" started-at="2018-05-27T17:51:57Z" finished-at="2018-05-27T17:52:08Z">
-      <class name="automationFramework.DataProviderTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:automationFramework.DataProviderTest@7cd62f43]" name="initialize" is-config="true" duration-ms="4937" started-at="2018-05-27T17:51:57Z" finished-at="2018-05-27T17:52:02Z">
+    <test name="Default test" duration-ms="160051" started-at="2018-05-27T18:22:24Z" finished-at="2018-05-27T18:25:04Z">
+      <class name="automationFramework.DataProviderWithExcel">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:automationFramework.DataProviderWithExcel@55b7a4e0]" name="initialize" is-config="true" duration-ms="4116" started-at="2018-05-27T18:24:39Z" finished-at="2018-05-27T18:24:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:automationFramework.DataProviderTest@7cd62f43]" name="test" duration-ms="154" started-at="2018-05-27T17:52:02Z" data-provider="Authentication" finished-at="2018-05-27T17:52:02Z">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:automationFramework.DataProviderWithExcel@55b7a4e0]" name="test" duration-ms="8264" started-at="2018-05-27T18:24:43Z" data-provider="Authentication" finished-at="2018-05-27T18:24:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test1]]>
+                <![CDATA[testuser_1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password1]]>
+                <![CDATA[Test@123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="kill()[pri:0, instance:automationFramework.DataProviderTest@7cd62f43]" name="kill" is-config="true" duration-ms="736" started-at="2018-05-27T17:52:02Z" finished-at="2018-05-27T17:52:03Z">
+        <test-method status="PASS" signature="kill()[pri:0, instance:automationFramework.DataProviderWithExcel@55b7a4e0]" name="kill" is-config="true" duration-ms="613" started-at="2018-05-27T18:24:52Z" finished-at="2018-05-27T18:24:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kill -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:automationFramework.DataProviderTest@7cd62f43]" name="initialize" is-config="true" duration-ms="4973" started-at="2018-05-27T17:52:03Z" finished-at="2018-05-27T17:52:08Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:automationFramework.DataProviderWithExcel@55b7a4e0]" name="initialize" is-config="true" duration-ms="3852" started-at="2018-05-27T18:24:52Z" finished-at="2018-05-27T18:24:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:automationFramework.DataProviderTest@7cd62f43]" name="test" duration-ms="140" started-at="2018-05-27T17:52:08Z" data-provider="Authentication" finished-at="2018-05-27T17:52:08Z">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:automationFramework.DataProviderWithExcel@55b7a4e0]" name="test" duration-ms="7172" started-at="2018-05-27T18:24:56Z" data-provider="Authentication" finished-at="2018-05-27T18:25:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test2]]>
+                <![CDATA[testuser_2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password2]]>
+                <![CDATA[Test@1234]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="kill()[pri:0, instance:automationFramework.DataProviderTest@7cd62f43]" name="kill" is-config="true" duration-ms="633" started-at="2018-05-27T17:52:08Z" finished-at="2018-05-27T17:52:08Z">
+        <test-method status="PASS" signature="kill()[pri:0, instance:automationFramework.DataProviderWithExcel@55b7a4e0]" name="kill" is-config="true" duration-ms="665" started-at="2018-05-27T18:25:03Z" finished-at="2018-05-27T18:25:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kill -->
-      </class> <!-- automationFramework.DataProviderTest -->
+      </class> <!-- automationFramework.DataProviderWithExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -68,5 +68,37 @@ public class ExcelUtils {
 		}
 	}
 	
-	
+	public static Object[][] getTableArray(String filePath, String sheetName) {
+		String[][] tabArry = null;
+		try {
+			FileInputStream ExcelFile = new FileInputStream(filePath);
+			
+			ExcelWBook = new XSSFWorkbook(ExcelFile);
+			ExcelWSheet = ExcelWBook.getSheet(sheetName);
+			
+			int startRow = 1;
+			int startCol = 1;
+			
+			int ci,cj;
+			ci=0;
+			
+			int totalRows = ExcelWSheet.getLastRowNum();
+			int totalCols = 2;
+			
+			tabArry = new String[totalRows][totalCols];
+			
+			for (int i = startRow; i <= totalRows; i++,ci++) {
+				cj=0;
+				
+				for (int j = startCol; j <= totalCols; j++,cj++) {
+					tabArry[ci][cj] = getCellData(i, j);
+					System.out.println(tabArry[ci][cj]);
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return tabArry;
+	}
 }
